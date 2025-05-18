@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme des Artistes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>VisuArt Studio 🖌</h1>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#artistes">Nos Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="accueil" class="carrousel">
+        <div class="carousel-images">
+            <div class="carousel-item">
+                <img src="artiste1.jpg" alt="actualité 1">
+            </div>
+            <div class="carousel-item">
+                <img src="artiste2.jpg" alt="actualité 2">
+            </div>
+            <div class="carousel-item">
+                <img src="artiste3.jpg" alt="actualité 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="artist-type">
+                <div class="artist-category">
+                    <h3>Communications</h3>
+                    <p>Gestion de vos diffeérents réseaux sociaux instagram, tiktok, instagram.</p>
+                </div>
+                <div class="artist-category">
+                    <h3>Graphistes</h3>
+                    <p>Les graphistes créent des œuvres visuelles uniques pour des projets créatifs.</p>
+                </div>
+                <div class="artist-category">
+                    <h3>Réalisateurs</h3>
+                    <p>Plongez dans l'univers du cinéma et des courts-métrages réalisés par nos membres.</p>
+                </div>
+                 <div class="artist-type">
+                <div class="artist-category">
+                    <h3>Photographe</h3>
+                    <p>Besoin de mettre en avant vos évènements nous disponibles pour capturer les moments les plus importants via nos photographes.</p>
+                </div>
+                <div class="artist-category">
+                    <h3>Dev UX</h3>
+                    <p>Développeurs de site web pour vos activités et entreprises.</p>
+                </div>
+                <div class="artist-category">
+                    <h3>Personnalisations</h3>
+                    <p>Personnalisations de vêtements, tee-shirt et toutes autres accessoires.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p>Explorez les créations de nos artistes. Cliquez pour voir en détail.</p>
+            <div class="gallery">
+                <div class="gallery-item"><img src="artboard affiche election  (2).jpg" alt="Portfolio 1"></div>
+                <div class="gallery-item"><img src="artboard affiche election  (2).jpg" alt="Portfolio 2"></div>
+                <div class="gallery-item"><img src="artboard affiche election  (2).jpg" alt="Portfolio 3"></div>
+                <div class="gallery-item"><img src="artboard affiche election  (2).jpg" alt="Portfolio 3"></div>
+                
+                <div class="gallery-item"><img src="artboard affiche élection groupe 23.jpg" alt="Portfolio 2"></div>
+                <div class="gallery-item"><img src="artboard affiche élection groupe 23.jpg" alt="Portfolio 3"></div>
+                <div class="gallery-item"><img src="artboard affiche élection groupe 23.jpg" alt="Portfolio 4"></div>
+                <div class="gallery-item"><img src="artboard affiche élection groupe 23.jpg" alt="Portfolio 4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="section">
+        <div class="container">
+            <h2>Blog</h2>
+            <p>Restez informé des dernières tendances et des interviews d'artistes.</p>
+            <div class="blog-posts">
+                <div class="post">
+                    <h3>Les tendances artistiques de 2024</h3>
+                    <p>Découvrez les nouvelles tendances et comment elles influencent la créativité.</p>
+                </div>
+                <div class="post">
+                    <h3>Interview avec un Graphiste</h3>
+                    <p>Un entretien exclusif avec un des meilleurs graphistes de notre plateforme.</p>
+                </div>
+                  </div>
+                  <br>
+                  <br>
+                <div class="post">
+                    <h3>Interview avec un Graphiste</h3>
+                    <p>Un entretien exclusif avec un des meilleurs graphistes de notre plateforme.</p>
+            </div>
+            <br>
+            <br>
+             <div class="post">
+                    <h3>Interview avec un Graphiste</h3>
+                    <p>Un entretien exclusif avec un des meilleurs graphistes de notre plateforme.</p>
+            </div>
+             </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <form id="contactForm">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+            <h3>Inscription des Artistes</h3>
+            <form id="registrationForm">
+                <label for="artistName">Nom</label>
+                <input type="text" id="artistName" name="artistName" required>
+                <label for="artistEmail">Email</label>
+                <input type="email" id="artistEmail" name="artistEmail" required>
+                <label for="artistType">Type d'Artiste</label>
+                <select id="artistType" name="artistType" required>
+                    <option value="musicien">Musicien</option>
+                    <option value="graphiste">Graphiste</option>
+                    <option value="realisateur">Réalisateur</option>
+                     <option value="realisateur">Photographe</option>
+                </select>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
