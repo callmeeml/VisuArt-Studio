@@ -1,0 +1,4 @@
+ErrorDocument 503 [maintenance.html](http://_vscodecontentref_/4)
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/maintenance\.html$
+RewriteRule ^.*$ - [R=503,L]

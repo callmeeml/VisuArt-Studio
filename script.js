@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     let carouselIndex = 0;
     const images = document.querySelectorAll("#carousel-container img");
   
@@ -10,4 +10,4 @@ document.addEventListener("DOMContentLoaded", () => {
   
     images.forEach((img, idx) => (img.style.display = idx === 0 ? "block" : "none"));
     setInterval(showNextImage, 3000);
-  });
+    }

@@ -1,6 +1,3 @@
-/* style.css */
-
-/* Variables globales */
 :root {
     --primary-color: #4caf50;
     --secondary-color: #333;
@@ -11,7 +8,6 @@
     --transition: all 0.3s ease-in-out;
 }
 
-/* Reset de base */
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +22,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Layout principal */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -34,7 +29,6 @@ body {
     padding: 20px 0;
 }
 
-/* Header */
 header {
     background: var(--primary-color);
     color: var(--white);
@@ -79,7 +73,6 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Carrousel */
 .carrousel {
     background: var(--light-gray);
     padding: 40px 0;
@@ -106,7 +99,6 @@ nav ul li a:hover::after {
     66% { transform: translateX(-66.66%); }
 }
 
-/* Sections */
 .section {
     padding: 60px 0;
     text-align: center;
@@ -137,7 +129,6 @@ nav ul li a:hover::after {
     font-size: 1rem;
 }
 
-/* Artistes */
 .artist-type {
     display: flex;
     justify-content: space-between;
@@ -247,7 +238,6 @@ form button:hover {
     background: #45a049;
 }
 
-/* Responsivité */
 @media (max-width: 768px) {
     nav ul {
         flex-wrap: wrap;
@@ -261,4 +251,132 @@ form button:hover {
     .carousel-item img {
         width: 100%;
     }
+}
+footer {
+    background: var(--black);
+    color: var(--white);
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+aside {
+    background: var(--light-gray);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    margin-bottom: 30px;
+    position: sticky;
+    top: 20px;
+}
+aside h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+    
+}
+
+body.dark-mode {
+  background-color: #181818;
+  color: #000000;
+}
+
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode .container,
+body.dark-mode .section,
+body.dark-mode .artist-category,
+body.dark-mode .gallery,
+body.dark-mode .blog-posts,
+body.dark-mode .post,
+body.dark-mode form,
+body.dark-mode aside
+body.dark-mode footer {
+  background-color: #000000 !important;
+  color: #000000 !important;
+  box-shadow: none;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode label,
+body.dark-mode a {
+  color: #ffffff !important;
+}
+
+body.dark-mode nav ul li a {
+  color: #ffffff !important;
+}
+
+body.dark-mode form input,
+body.dark-mode form textarea,
+body.dark-mode form select {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #57ac42;
+}
+
+body.dark-mode form button {
+  background: #57ac42;
+  color: #ffffff;
+}
+
+body.dark-mode .carousel-item img,
+body.dark-mode .gallery-item img {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+body.dark-mode form {
+  background-color: #181818 !important; /* noir */
+  color: #f1f1f1 !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+body.dark-mode .newsletter-form,
+body.dark-mode .postulez-form {
+  background-color: #181818 !important;
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode header h1,
+body.dark-mode header nav ul li a {
+  color: #57ac42 !important; 
+}
+
+#darkModeToggle {
+  background: linear-gradient(135deg, #46a343 40%, #444 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(84, 185, 53, 0.18);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  z-index: 1000;
+}
+#darkModeToggle:hover {
+  background: linear-gradient(135deg, #444 40%, #222 100%);
+  transform: scale(1.08);
+}
+
+button,
+form button {
+  background: linear-gradient(135deg, #46a343 40%, #444 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 16px rgba(84, 185, 53, 0.18);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  z-index: 1000;
+}
+button:hover,
+form button:hover {
+  background: linear-gradient(135deg, #444 40%, #222 100%);
+  transform: scale(1.08);
 }

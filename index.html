@@ -14,9 +14,9 @@
             <nav>
                 <ul>
                     <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#artistes">Nos Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="Nos services.html ">Réservation</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -75,20 +75,19 @@
             <h2>Portfolio</h2>
             <p>Explorez les créations de nos artistes. <a href="Portfolio.html">Cliquez pour voir en détail.</a></p>
             <div class="gallery">
-                <div class="gallery-item"><img src="artboard affiche election  (2).jpg" alt="Portfolio 1"></div>
-                <div class="gallery-item"><img src="artboard enigme annonce.jpg" alt="Portfolio 2"></div>
-                <div class="gallery-item"><img src="TEDO SHOP MENU (1).jpg" alt="Portfolio 3"></div>
-                <div class="gallery-item"><img src="artboard affiche election  (2).jpg" alt="Portfolio 3"></div>
+                <div class="gallery-item"><img src="ALL WHITE.png" alt="Portfolio 1"></div>
+                <div class="gallery-item"><img src="ALL WHITE.png" alt="Portfolio 2"></div>
+                <div class="gallery-item"><img src="ALL WHITE.png" alt="Portfolio 3"></div>
+                <div class="gallery-item"><img src="ALL WHITE.png" alt="Portfolio 3"></div>
                 
-                <div class="gallery-item"><img src="artboard (1).jpg" alt="Portfolio 2"></div>
-                <div class="gallery-item"><img src="artboard affiche élection groupe 23.jpg" alt="Portfolio 3"></div>
-                <div class="gallery-item"><img src="TEDO SHOP MENU (1).jpg" alt="Portfolio 4"></div>
-                <div class="gallery-item"><img src="artboard affiche élection groupe 23.jpg" alt="Portfolio 4"></div>
+                <div class="gallery-item"><img src="ALL WHITE.png" alt="Portfolio 2"></div>
+                <div class="gallery-item"><img src="ALL WHITE.png" alt="Portfolio 3"></div>
+                <div class="gallery-item"><img src="ALL WHITE.png" alt="Portfolio 4"></div>
+                <div class="gallery-item"><img src="ALL WHITE.png" alt="Portfolio 4"></div>
             </div>
         </div>
     </section>
 
-    <!-- Blog -->
     <section id="blog" class="section">
         <div class="container">
             <h2>Blog</h2>
@@ -120,7 +119,6 @@
         </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="section">
         <div class="container">
             <h2>Contactez-nous</h2>
@@ -133,15 +131,17 @@
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit">Envoyer</button>
             </form>
-            <h3>Inscription des Artistes</h3>
-            <form id="registrationForm" action="https://getform.io/f/bologmpa" method="POST">
+        </div>
+        <div class="container">
+            <h2>Postulez pour notre entreprise</h2>
+            <form id="registrationForm" action="https://getform.io/f/bologmpa" method="POST" class="postulez-form">
                 <label for="artistName">Nom</label>
                 <input type="text" id="artistName" name="artistName" required>
                 <label for="artistEmail">Email</label>
                 <input type="email" id="artistEmail" name="artistEmail" required>
-                <label for="artistType">Type d'Artiste</label>
-                <select id="artistType" name="artistType" required>
-                    <option value="musicien">Musicien</option>
+                <label for="artistType">Type de Poste</label>
+                <select id="posttType" name="postType" required>
+                    <option value="Développeur">Développeur</option>
                     <option value="graphiste">Graphiste</option>
                     <option value="realisateur">Réalisateur</option>
                      <option value="realisateur">Photographe</option>
@@ -149,8 +149,26 @@
                 <button type="submit">S'inscrire</button>
             </form>
         </div>
+     <div class="container">
+        <h2>Newsletter</h2>
+        <form action="#" method="post" class="newsletter-form">
+            <input type="email" placeholder="Votre e-mail">
+            <button type="submit">S'abonner</button>
+        </form>
+    </div>
+    
     </section>
-
+  
+    <footer>
+        <p>&copy; 2025 VisuArt Studio. Tous droits réservés.</p>
+        
+</footer>
+<button id="darkModeToggle" style="position:fixed;bottom:20px;right:20px;">🌙 Mode sombre</button>
+<script>
+document.getElementById('darkModeToggle').onclick = function() {
+  document.body.classList.toggle('dark-mode');
+};
+</script>
     <script src="script.js"></script>
 </body>
 </html>
